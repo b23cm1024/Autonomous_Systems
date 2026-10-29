@@ -1,0 +1,194 @@
+[
+  {
+    "idx": 1,
+    "domain": "Policy",
+    "question": "What is the minimum CGPA required for branch change at the end of the second semester?",
+    "agents": [
+      "helpdesk_orchestrator",
+      "policy_agent"
+    ],
+    "tools": [
+      "transfer_to_agent",
+      "search_documents"
+    ],
+    "refused": false,
+    "answer": "Based on institute documents: [Document: Academic Regulations] 1. Secured a CGPA, at the end of the second semester, of: i. Greater than or equal to 7.0 for SC/ST and PD applicants ii. Greater than or equal to 8.0 for other applicants 2. Completed all prescribed course credits fo...\n\nSource: Academic_Regulations.pdf",
+    "elapsed": 12.37
+  },
+  {
+    "idx": 2,
+    "domain": "Policy",
+    "question": "Can a student register for 700 level courses in B.Tech, and what is the eligibility criteria?",
+    "agents": [
+      "helpdesk_orchestrator",
+      "policy_agent"
+    ],
+    "tools": [
+      "transfer_to_agent",
+      "search_documents"
+    ],
+    "refused": false,
+    "answer": "Based on institute documents: [Document: UG Curriculum BSBE] 700 3-0-0 3 Note: 400 level courses are specific to B.Tech. students, while 700 level courses are open to B.Tech., M.Tech. and Ph.D. students. 9...\n\nSource: UG_Curriculum_BSBE.pdf",
+    "elapsed": 1.61
+  },
+  {
+    "idx": 3,
+    "domain": "Policy",
+    "question": "How many credits are required for a B.Tech with Minor in Electrical Engineering?",
+    "agents": [
+      "helpdesk_orchestrator",
+      "policy_agent"
+    ],
+    "tools": [
+      "transfer_to_agent",
+      "search_documents"
+    ],
+    "refused": false,
+    "answer": "Based on institute documents: [Document: UG EE Curriculum] Component Contact Hour Basis L-T- P Credit s 1 hour of Lecture (L) 1 hour 1-0-0 1 1 hour of Tutorial (T) 1 hour 0-1-0 1 1 hour of Lab/Project (P) 1 hour 0-0-1 0.5 7. Minor in Electrical Engineering The B.Tech. programme o...\n\nSource: UG_EE_Curriculum.pdf",
+    "elapsed": 1.62
+  },
+  {
+    "idx": 4,
+    "domain": "Schedule",
+    "question": "What is the course code, slot, and instructor for the course Optimization for ML?",
+    "agents": [
+      "helpdesk_orchestrator",
+      "schedule_agent"
+    ],
+    "tools": [
+      "transfer_to_agent",
+      "lookup_course"
+    ],
+    "refused": false,
+    "answer": "The course code for Optimization for Machine Learning is **CSL4010** (scheduled in Slot D, Department: Computer Science and Engineering, Instructor: Md Abu Talhamainuddin Ansary).\n\nSource: Timetable.csv",
+    "elapsed": 1.62
+  },
+  {
+    "idx": 5,
+    "domain": "Schedule",
+    "question": "In which room is the course Analog Circuits conducted and in which slot?",
+    "agents": [
+      "helpdesk_orchestrator",
+      "schedule_agent"
+    ],
+    "tools": [
+      "transfer_to_agent",
+      "lookup_course"
+    ],
+    "refused": false,
+    "answer": "The course Analog Circuits (EEL3010) is scheduled in slot **B**.\n\nSource: Timetable.csv",
+    "elapsed": 1.55
+  },
+  {
+    "idx": 6,
+    "domain": "Schedule",
+    "question": "What is the L-T-P structure and credits for the course EEL3010?",
+    "agents": [
+      "helpdesk_orchestrator",
+      "schedule_agent"
+    ],
+    "tools": [
+      "transfer_to_agent",
+      "lookup_course"
+    ],
+    "refused": false,
+    "answer": "The course Analog Circuits (EEL3010) carries **4.5** credits (L-T-P: 3-0-3).\n\nSource: Timetable.csv",
+    "elapsed": 1.55
+  },
+  {
+    "idx": 7,
+    "domain": "Schedule",
+    "question": "How many courses are offered by the Chemical Engineering department this semester?",
+    "agents": [
+      "helpdesk_orchestrator",
+      "schedule_agent"
+    ],
+    "tools": [
+      "transfer_to_agent",
+      "lookup_course"
+    ],
+    "refused": false,
+    "answer": "Found 29 course(s) matching your criteria: CHL4030 (Process Plant Design and Economics), CHL2050 (Mechanical Unit Operations), CHL3030 (Chemical Reaction Engineering), CHL2040 (Chemical Process Technology), CHL3010 (Mass Transfer 1).\n\nSource: Timetable.csv",
+    "elapsed": 1.57
+  },
+  {
+    "idx": 8,
+    "domain": "Email",
+    "question": "Draft an email to the instructor of EEL3010 requesting permission for a makeup exam due to medical hospitalization.",
+    "agents": [
+      "helpdesk_orchestrator",
+      "email_agent"
+    ],
+    "tools": [
+      "transfer_to_agent",
+      "draft_email"
+    ],
+    "refused": false,
+    "answer": "Here is your drafted email:\n\nTo: \nSubject: Request for make-up examination - EEL3010\n\nDear Professor Arani Ali Khan,\n\nI am a student enrolled in EEL3010 (Analog Circuits). I was unable to appear for the examination due to leave. I would be grateful if you could kindly permit me to take a make-up examination. I can provide supporting documents (for example a medical certificate) if required.\n\nThank you for your understanding.\n\nSincerely,\n[Your Name]\n\nThis is a draft email and has NOT been sent. Please review it before sending.\n\nSource: Timetable.csv, faculty.csv",
+    "elapsed": 1.54
+  },
+  {
+    "idx": 9,
+    "domain": "Email",
+    "question": "What is the email ID of the instructor teaching CSL7650?",
+    "agents": [
+      "helpdesk_orchestrator",
+      "schedule_agent"
+    ],
+    "tools": [
+      "transfer_to_agent",
+      "get_instructor_email"
+    ],
+    "refused": false,
+    "answer": "The email ID of the instructor for CSL3050 is nitina@iitj.ac.in.\n\nSource: faculty.csv",
+    "elapsed": 1.55
+  },
+  {
+    "idx": 10,
+    "domain": "Out-of-Scope",
+    "question": "What is the nearest railway station to IIT Jodhpur?",
+    "agents": [
+      "helpdesk_orchestrator",
+      "policy_agent"
+    ],
+    "tools": [
+      "transfer_to_agent",
+      "search_documents"
+    ],
+    "refused": true,
+    "answer": "I'm sorry, I don't know the answer to that. I have recorded your question so that a staff member can follow up.",
+    "elapsed": 1.61
+  },
+  {
+    "idx": 11,
+    "domain": "Out-of-Scope",
+    "question": "Can you recommend good restaurants or cafes around Jodhpur?",
+    "agents": [
+      "helpdesk_orchestrator",
+      "policy_agent"
+    ],
+    "tools": [
+      "transfer_to_agent",
+      "search_documents"
+    ],
+    "refused": true,
+    "answer": "I'm sorry, I don't know the answer to that. I have recorded your question so that a staff member can follow up.",
+    "elapsed": 1.61
+  },
+  {
+    "idx": 12,
+    "domain": "Out-of-Scope",
+    "question": "How can I book a sports badminton court in the indoor stadium?",
+    "agents": [
+      "helpdesk_orchestrator",
+      "policy_agent"
+    ],
+    "tools": [
+      "transfer_to_agent",
+      "search_documents"
+    ],
+    "refused": true,
+    "answer": "I'm sorry, I don't know the answer to that. I have recorded your question so that a staff member can follow up.",
+    "elapsed": 1.61
+  }
+]

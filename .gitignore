@@ -1,0 +1,24 @@
+# Reports & Documentation (excluded as requested)
+README.md
+REPORT.md
+results/report.md
+
+# Redundant / Old / Scratch files
+python files/
+scratch_curriculum_analysis.txt
+tally_curriculum_excel.py
+interactions.jsonl
+results/graded_latest.csv
+assignment_2_autonomous.zip
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+venv/
+
+# Vector database cache
+chroma_db/

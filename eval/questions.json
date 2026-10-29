@@ -1,0 +1,299 @@
+[
+ {
+  "id": "P01",
+  "category": "policy",
+  "question": "What is the attendance requirement to sit in the Major exam?",
+  "expected_any": [
+   "75",
+   "no longer linked",
+   "not linked"
+  ],
+  "expected_source_any": [
+   "Attendance_Policy.pdf"
+  ]
+ },
+ {
+  "id": "P02",
+  "category": "policy",
+  "question": "What happens if my attendance falls below 75% without any valid reason?",
+  "expected_any": [
+   "de-regist",
+   "deregist"
+  ],
+  "expected_source_any": [
+   "Attendance_Policy.pdf"
+  ]
+ },
+ {
+  "id": "P03",
+  "category": "policy",
+  "question": "How many Open Elective credits do I need to earn in order to get a B.Tech. Degree?",
+  "expected_any": [
+   "12",
+   "9 to 12",
+   "9-12"
+  ],
+  "expected_source_any": [
+   "UG-Curriculum-CSE-2026.pdf",
+   "UG_EE_Curriculum.pdf",
+   "Curriculum-BTech_ECE.pdf",
+   "UG-Curriculum-AIDE-2026.pdf",
+   "Btech_credits.pdf"
+  ]
+ },
+ {
+  "id": "P04",
+  "category": "policy",
+  "question": "What are the minimum credits and CGPA required to opt for a Minor?",
+  "expected_all": [
+   "100",
+   "6"
+  ],
+  "expected_source_any": [
+   "Academic_Regulations.pdf"
+  ]
+ },
+ {
+  "id": "P05",
+  "category": "policy",
+  "question": "How many credits does a Minor or Interdisciplinary Specialization need in total?",
+  "expected_all": [
+   "20"
+  ],
+  "expected_source_any": [
+   "Academic_Regulations.pdf"
+  ]
+ },
+ {
+  "id": "P06",
+  "category": "policy",
+  "question": "What happens if a student misses the make-up examination too?",
+  "expected_any": [
+   "chairman",
+   "senate",
+   "first week",
+   "not normally"
+  ],
+  "expected_source_any": [
+   "Academic_Regulations.pdf",
+   "Regulation_PG.pdf"
+  ]
+ },
+ {
+  "id": "P07",
+  "category": "policy",
+  "question": "Can a student audit a course, and whose permission is needed?",
+  "expected_any": [
+   "dean"
+  ],
+  "expected_source_any": [
+   "Academic_Regulations.pdf"
+  ]
+ },
+ {
+  "id": "P08",
+  "category": "policy",
+  "question": "How are students evaluated in a regular 14-week lecture course?",
+  "expected_any": [
+   "minor",
+   "major"
+  ],
+  "expected_source_any": [
+   "Academic_Regulations.pdf",
+   "Regulation_PG.pdf"
+  ]
+ },
+ {
+  "id": "P09",
+  "category": "policy",
+  "question": "What topics are covered in the Control Systems course of the Electrical Engineering curriculum?",
+  "expected_source_any": [
+   "UG_EE_Curriculum.pdf"
+  ],
+  "expected_any": [
+   "transfer function",
+   "routh-hurwitz",
+   "bode",
+   "stability",
+   "root locus",
+   "modeling",
+   "feedback"
+  ]
+ },
+ {
+  "id": "S01",
+  "category": "schedule",
+  "question": "What is the slot for the course Autonomous Systems?",
+  "gold": {
+   "csv": {
+    "course_name": "Autonomous Systems",
+    "field": "slot",
+    "kind": "text"
+   }
+  }
+ },
+ {
+  "id": "S02",
+  "category": "schedule",
+  "question": "Who is the instructor of CSL3050?",
+  "gold": {
+   "csv": {
+    "course_code": "CSL3050",
+    "field": "instructor",
+    "kind": "name"
+   }
+  }
+ },
+ {
+  "id": "S03",
+  "category": "schedule",
+  "question": "In which classroom is the Database Systems course held?",
+  "gold": {
+   "csv": {
+    "course_name": "Database Systems",
+    "field": "room",
+    "kind": "text"
+   }
+  }
+ },
+ {
+  "id": "S04",
+  "category": "schedule",
+  "question": "How many credits is the course CSL3050?",
+  "gold": {
+   "csv": {
+    "course_code": "CSL3050",
+    "field": "credits",
+    "kind": "num"
+   }
+  }
+ },
+ {
+  "id": "S05",
+  "category": "schedule",
+  "question": "How many 400 level electives have been floated by the Humanities department in this semester?",
+  "gold": {
+   "count": {
+    "department_contains": "humanit",
+    "level": "400"
+   }
+  }
+ },
+ {
+  "id": "S06",
+  "category": "schedule",
+  "question": "How many courses does the Computer Science and Engineering department offer in slot A?",
+  "gold": {
+   "count": {
+    "department_contains": "computer science",
+    "slot": "A"
+   }
+  }
+ },
+ {
+  "id": "S07",
+  "category": "schedule",
+  "question": "What is the email ID of the instructor of CSL3050?",
+  "gold": {
+   "email_for_course": "CSL3050"
+  }
+ },
+ {
+  "id": "S08",
+  "category": "schedule",
+  "question": "What is the L-T-P structure of the Database Systems course?",
+  "gold": {
+   "csv": {
+    "course_name": "Database Systems",
+    "field": "ltp",
+    "kind": "text"
+   }
+  }
+ },
+ {
+  "id": "E01",
+  "category": "email",
+  "question": "Write an email to the course instructor of CSL7570 that I need leave for 2 days",
+  "expect_draft": true,
+  "expected_all": [
+   "CSL7570",
+   "2 day"
+  ]
+ },
+ {
+  "id": "E02",
+  "category": "email",
+  "question": "I have fever. Draft a sick leave email for CSL3050 for 3 days. My name is Rahul Sharma.",
+  "expect_draft": true,
+  "expected_all": [
+   "CSL3050",
+   "3 day",
+   "Rahul Sharma",
+   "fever"
+  ]
+ },
+ {
+  "id": "E03",
+  "category": "email",
+  "question": "Write an email to the instructor of Database Systems asking permission for a make-up exam, I missed the Major exam because of illness.",
+  "expect_draft": true,
+  "expected_all": [
+   "CSL3050"
+  ],
+  "expected_any": [
+   "make-up",
+   "makeup",
+   "make up"
+  ]
+ },
+ {
+  "id": "E04",
+  "category": "email",
+  "question": "I need leave from tomorrow, please write an email to my instructor.",
+  "expect_draft": false,
+  "note": "Course code and days are missing: the agent must ASK, not draft"
+ },
+ {
+  "id": "E05",
+  "category": "email",
+  "question": "Draft a leave email for the course XYZ9999 for 2 days.",
+  "expect_draft": false,
+  "note": "Course does not exist: the agent must NOT invent an email"
+ },
+ {
+  "id": "O01",
+  "category": "out_of_scope",
+  "question": "What are the available dining options on the campus?",
+  "expect_refusal": true
+ },
+ {
+  "id": "O02",
+  "category": "out_of_scope",
+  "question": "What is the best way to reach the campus from Jodhpur city center?",
+  "expect_refusal": true
+ },
+ {
+  "id": "O03",
+  "category": "out_of_scope",
+  "question": "What will the weather be like in Jodhpur tomorrow?",
+  "expect_refusal": true
+ },
+ {
+  "id": "O04",
+  "category": "out_of_scope",
+  "question": "Who won the IPL final this year?",
+  "expect_refusal": true
+ },
+ {
+  "id": "O05",
+  "category": "out_of_scope",
+  "question": "Can you recommend a good movie to watch this weekend?",
+  "expect_refusal": true
+ },
+ {
+  "id": "O06",
+  "category": "out_of_scope",
+  "question": "What is the capital of France?",
+  "expect_refusal": true
+ }
+]
